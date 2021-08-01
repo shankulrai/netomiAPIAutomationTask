@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Netomi API Automation Task">
+    <listeners>
+        <listener class-name="com.netomi.listeners.TestListener"/>
+        <listener class-name="com.netomi.listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name = "Weather Forecast for 5 days" >
+        <classes>
+            <class name = "com.netomi.tests.FiveDaysWeatherAPITest" />
+        </classes>
+    </test>
+</suite>
+
